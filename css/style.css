@@ -1,0 +1,311 @@
+/****************************************************** 1.0 GENERAL */
+
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: white;
+   background: black;
+}
+
+
+
+/************************************************* 2.0 LANDING_PAGE */
+
+.landing-page {
+background: black;
+background-image: url("../assets/images/010\ -\ Murale\ de\ Roa.jpg");
+background-position: center;
+background-size: cover;
+width: 100vw;
+height: 100vh;
+margin-bottom: 6vw;
+}
+
+.header {
+   width: 100%;
+   height: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-menu {
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.header-menu div {
+   height: 2vw;
+   width: 5vw;
+   display: flex;
+   justify-content: center;
+}
+
+.header-menu div a {
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 0.8em;
+   text-align: center;
+   letter-spacing: 3px;
+   text-decoration: none;
+   transition: 0.2s;
+   cursor: pointer;
+}
+
+.header-menu div a:hover {
+   font-size: 1em;
+   color: #FD372A;
+}
+
+.brand {
+width: 100%;
+height: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+}
+
+.brand img {
+   width: 13.5%;
+   height: auto;
+   margin-bottom: 7vw;
+}
+
+.brand .tag {
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 0.95em;
+   letter-spacing: 3px;
+   margin-bottom: 4vw;
+}
+
+.scroll-icon {
+   width: 100%;
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.scroll-icon img {
+   width: 1.5%;
+   margin-bottom: 0.7vw;
+}
+
+.scroll-icon .scroll-text {
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 0.6em;
+   letter-spacing: 3px;
+}
+
+
+
+
+/******************************************************* 3.0 GALLERY */
+
+/* 3.1 Gallery Scroll-length */
+.gallery__scroll-length {
+   width: 100vw;
+   height: auto;
+   /*heigth: auto; */
+   position: relative;
+   z-index: 0;
+}
+
+.initial__scroll-length {
+   height: 75vw;
+}
+
+.scroll-length {
+   height: 80vw;
+}
+
+/* 3.2 Fix-position */
+.gallery__container{
+   background: black;
+   width: 100vw;
+   height: 100vh;
+   z-index: 10;
+   padding: 4vw 0vw 2.5vw 0vw;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+/* 3.3 Expanding-gallery + animation */
+
+.gallery-thumbnail {
+   height: 100vh;
+   display: flex;
+   justify-content: flex-end;
+   text-align: right;
+}
+
+.gallery-thumbnail div {
+   font-size: 6em;
+   width: 15vw;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   margin: 0vw 10vw 0vw 55vw;
+   text-align: right;
+}
+
+.last-margin {
+   width: 18vw;
+   height: 100%;
+   margin-left: 18vw;
+}
+
+/* 3.4 Gallery-content */
+.work {
+   width: 80vw;
+   height: 90vh;
+   margin-left: 18vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.figure {
+   width: auto;
+   height: 86%;
+}
+
+.figure img {
+   width: auto;
+   height: 100%;
+}
+
+.figure figcaption {
+   display: none;
+}
+
+.info {
+   margin-top: 1em;
+   width: 100%;
+   height: 12%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.title {
+   font-size: 3.6em;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   padding-right: 1.3vw;
+}
+
+.details {
+   width: 40%;
+   padding-left: 2vw;
+   border-left: solid white 1px;
+}
+
+.date {
+   font-size: 0.8em;
+   letter-spacing: 1em;
+   font-weight: bold;
+   margin-bottom: 0.1em;
+}
+
+.description {
+   width: 100%;
+   font-size: 0.75em;
+}
+
+
+
+
+/******************************************************* 4.0 FOOTER */
+
+/* 4.1 Footer general */
+.footer {
+   position: absolute;
+   color: black;
+   background-color: white;
+   margin-top: 5vw;
+   width: 100vw;
+   height: 30vh;
+   z-index: 11;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* 4.2 Footer logo */
+.footer img {
+   width: auto;
+   height: 20%;
+   margin-top: 1.8vw;
+}
+
+/* 4.3 Footer socials */
+.footer .socials {
+   height: 6vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.footer .socials div {
+width: 6vw;
+height: auto;
+text-align: center;
+}
+
+.footer .socials div a {
+   font-size: 0.8em;
+   align-items: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: black;
+   text-decoration: none;
+   transition: 0.2s;
+   cursor: pointer;
+}
+
+.footer .socials div a:hover {
+   font-size: 1em;
+   color: #FD372A;
+}
+
+/* 4.4 Footer bottom */
+
+.footer .bottom {
+   width: 90vw;
+   border-top: solid black 1px;
+   display: flex;
+   justify-content: center;
+}
+
+.footer .bottom div {
+   width: 40vw;
+   padding: 0.4vw;
+   display: flex;
+   justify-content: space-around;
+   font-size: 0.8em;
+   text-align: center;
+}
+
+.footer .bottom div p {
+   width: 100%;
+   text-align: center;
+}
+
+.footer .bottom div p:hover {
+   color: #FD372A;
+   cursor: pointer;
+}
